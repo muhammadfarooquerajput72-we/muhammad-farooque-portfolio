@@ -1,0 +1,30 @@
+:root {
+  color-scheme: light;
+
+  --canvas: #f5f1e8;
+  --surface: #fffdf8;
+  --ink: #081522;
+  --muted: #656a6e;
+  --orange: #ed4a24;
+  --orange-dark: #a82b10;
+  --blue: #1f64d8;
+  --blue-dark: #164a9f;
+  --amber: #d99a24;
+  --amber-dark: #8a5a00;
+  --sage: #6e806e;
+  --sage-dark: #425e48;
+  --line: rgb(8 21 34 / 14%);
+  --line-strong: rgb(8 21 34 / 28%);
+  --focus: #1457bf;
+
+  --font-sans: "Aptos", "Avenir Next", "Segoe UI", sans-serif;
+  --font-mono: "Cascadia Mono", "IBM Plex Mono", "SFMono-Regular", Consolas,
+    monospace;
+
+  --radius-surface: 0.875rem;
+  --radius-control: 999px;
+  --page-gutter: clamp(1.25rem, 4vw, 4rem);
+  --page-width: 80rem;
+  --section-space: clamp(4rem, 9vw, 8rem);
+  --shadow-surface: 0 1.5rem 4rem rgb(54 43 23 / 8%);
+}

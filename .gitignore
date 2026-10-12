@@ -1,0 +1,27 @@
+# Dependencies
+node_modules/
+
+# Next.js build output
+.next/
+out/
+
+# Test output
+coverage/
+playwright-report/
+test-results/
+.impeccable/
+
+# Local design and generation working files
+assets/
+resources/
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+*.pem
+
+# Editor and operating system files
+.DS_Store
+Thumbs.db
+*.tsbuildinfo
