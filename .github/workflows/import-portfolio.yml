@@ -11,13 +11,14 @@ permissions:
 jobs:
   import:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
 
       - name: Download verified archive
         run: |
-          curl --fail --silent --show-error --location "https://97a53d7f13fdcb.lhr.life/portfolio.zip" --output portfolio.zip
+          curl --fail --show-error --location --retry 5 --retry-delay 5 --max-time 1200 "https://0106a01973c6e2.lhr.life/portfolio.zip" --output portfolio.zip
           echo "1de41debe62717808b315df33da56a4b8933b5605c1a64a712a400e4896ce7fe  portfolio.zip" | sha256sum --check
 
       - name: Import portfolio source
